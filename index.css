@@ -13,18 +13,22 @@ body {
 }
 
 header {
-    background-color: azure;
+    background-color:antiquewhite;
     color: aliceblue;
 }
 
-nav {
+.nav-izquierda {
     display: flex;
     justify-content:space-between;
     align-items:center;
-    padding: 5px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 30%;
+    font-weight: bold;
 }
+
+
 
 nav-derecha, 
 nav-izquierda {
