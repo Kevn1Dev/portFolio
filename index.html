@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>PortFolio</title>
 </head>
 
 <body>
-    <nav>
-        <Div class="izquierda">
-            <li>Inicio</li>
-            <li>Sobre mi</li>
-            <li>Mis Proyectos</li>
-        </Div>
-
-        <div class="derecha">
-            <!--Poner para elegir el idioma (Español o Ingles)-->
-        </div>
-    </nav>
+    <header class="navbar">
+        <nav>
+            <Div class="nav-izquierda">
+                <a href="#">Inicio</a>
+                <a href="#">Sobre mi</a>
+                <a href="#">Mis Proyectos</a>
+                <a href="#">Contacto</a>
+            </Div>
+    
+            <div class="nav-derecha">
+                <!--Poner para elegir el idioma (Español o Ingles)-->
+            </div>
+        </nav>
+    </header>
 
     <header">
-        <!-- Hacer que al tocar "Inicio" del navbar se deslice a donde esta el inicio en el header.-->
+        <!-- Hacer que al tocar "Inicio" del navbar se deslice a donde esta el inicio en el header y lo mismo con ls demás.-->
         <div class="inicio">
-            <h1>Diograzia Kevin Nicolás</h1>
+            <h2>Nombre completo:</h2>
+            <h3>Diograzia Kevin Nicolás</h3>
             <h3> Desarrollador Back-End, Desarrollador Full-Stack</h3>
         </div>
 
         <div class="sobre-mi">
+            <h2>Sobre mi:</h2>
             <h3>Tengo 20 años, actualmente estoy cursando mi ultimo año de secundaria en una escuela técnica orientada a la computación. 
             <br> <br> 
             Estoy en busca de poder ingresar al mundo laboral y poder aprender y mejorar en la programación. 
@@ -52,6 +58,46 @@
             <li>PostgreSQL</li>
             <li>MongoDB</li>
             </h3>
+        </div>
+
+        <div class="mis-proyectos">
+            <h2>Mis proyectos:</h2>
+            <h3>Actualmente estoy con pocos proyectos pero en está sección van a estar todos los proyectos que yo haya hecho desde 0.</h3>
+
+            <div class="proyecto">
+                <img src="#" alt="Foto de como se ve el proyecto">
+                <h2 class="titulo">
+                    Nombre del proyecto.
+                </h2>
+                <h3 class="descripcion">
+                    Descripción breve del proyecto.
+                </h3>
+            </div>
+
+            <div class="proyecto">
+                <img src="#" alt="Foto de como se ve el proyecto">
+                <h2 class="titulo">
+                    Nombre del proyecto.
+                </h2>
+                <h3 class="descripcion">
+                    Descripción breve del proyecto.
+                </h3>
+            </div>
+
+            <div class="proyecto">
+                <img src="#" alt="Foto de como se ve el proyecto">
+                <h2 class="titulo">
+                    Nombre del proyecto.
+                </h2>
+                <h3 class="descripcion">
+                    Descripción breve del proyecto.
+                </h3>
+            </div>
+
+        </div>
+
+        <div class="contactos">
+            <!--Proximamente hacer un formulario de contacto, ubicacion general(poner que soy de CABA unicamente) y numero de telefono(uno falso por ahora :D)-->
         </div>
 
 
