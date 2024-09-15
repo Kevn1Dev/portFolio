@@ -1,3 +1,3 @@
 # portFolio
-A web page about me and my project's.
+A web page about me and my projects.
 Creating the page to practice and acquire more experience.
