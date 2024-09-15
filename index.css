@@ -2,8 +2,6 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
 }
@@ -12,25 +10,20 @@ body {
     background-color:beige;
 }
 
-header {
-    background-color:antiquewhite;
-    color: aliceblue;
+.navbar {
+    background-color:blanchedalmond;
 }
 
 .nav-izquierda {
     display: flex;
     justify-content:space-between;
-    align-items:center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5%;
-    padding-right: 30%;
+    align-items:center; 
     font-weight: bold;
 }
 
 ul li{
     display: inline-block;
-    padding: 10px 10px 5px 5px;
+    padding: 5px 5px 5px 30px;
 }
 
 a{
@@ -39,5 +32,10 @@ a{
 }
 
 a:hover{
-    color: coral;
+    color:tan;
+}
+
+.inicio {
+    display:inline-block;
+    justify-content: space-between;
 }
