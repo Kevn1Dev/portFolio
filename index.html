@@ -8,54 +8,38 @@
 </head>
 
 <body>
-    <nav>
-        <Div class="nav-izquierda">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Mis Proyectos</a>
-            <a href="#">Contacto</a>
-        </Div>
-
-        <div class="nav-derecha">
-            <!--Poner para elegir el idioma (Español o Ingles)-->
+    <div class="navbar">
+        <div class="container">
+            <nav>
+                <Div class="nav-izquierda">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre mi</a></li>
+                        <li><a href="#">Mis Proyectos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </Div>
+        
+                <div class="nav-derecha">
+                    <!--Poner para elegir el idioma (Español o Ingles)-->
+                    <button>spanish</button>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </div>
 
-    <header">
+    <header>
         <!-- Hacer que al tocar "Inicio" del navbar se deslice a donde esta el inicio en el header y lo mismo con ls demás.-->
         <div class="inicio">
-            <h2>Nombre completo:</h2>
-            <h3>Diograzia Kevin Nicolás</h3>
-            <h3> Desarrollador Back-End, Desarrollador Full-Stack</h3>
+            <h2>Diograzia Kevin Nicolás</h2>
+            <h3> Desarrollador Back-End</h3>
         </div>
 
         <div class="sobre-mi">
             <h2>Sobre mi:</h2>
             <h3>Tengo 20 años, actualmente estoy cursando mi ultimo año de secundaria en una escuela técnica orientada a la computación. 
             <br> <br> 
-            Estoy en busca de poder ingresar al mundo laboral y poder aprender y mejorar en la programación. 
-            <br>
-            Tengo conocimientos en estos Lenguajes: </h3>
-
-            <h3 class="front-end">Front-end: 
-            <li>Html</li>
-            <li>Css</li>
-            <li>JavaScript</li>
-            <li>React</li>    
-            <li>Tailwind CSS</li>
-            </h3>
-
-            <h3 class="back-end">Back-end:
-            <li>Java</li>
-            <li>C#</li>
-            <li>Php</li>    
-            </h3>
-
-            <h3 class="database">Bases de datos:
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            </h3>
+            Estoy en busca de poder ingresar al mundo laboral y poder aprender y mejorar en la programación. <h3>
         </div>
 
         <div class="mis-proyectos">
@@ -94,12 +78,46 @@
 
         </div>
 
+        <div class="conocimientos">
+            <h3>Conocimientos: </h3>
+
+            <h3 class="front-end">Front-end: 
+                <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                    <li>React</li>    
+                    <li>Tailwind CSS</li>
+                </ul>
+            </h3>
+
+            <h3 class="back-end">Back-end:
+                <ul>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Php</li>   
+                </ul> 
+            </h3>
+
+            <h3 class="database">Bases de datos:
+                <ul>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </h3>
+        </div>
+
         <div class="contactos">
-            <!--Proximamente hacer un formulario de contacto, ubicacion general(poner que soy de CABA unicamente) y numero de telefono(uno falso por ahora :D)-->
+            <!--Poner el link de github, mi gmail y que soy de CABA unicamente-->
         </div>
 
 
     </header>
+    
+    <footer> 
+        &copy;Todos los derechos reservados by: K 
+    </footer>
     
 </body>
 </html>
