@@ -1,119 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Diograzia Kevin Nicolás, desarrollador Back-End">
+    <meta name="author" content="Diograzia Kevin Nicolás">
+    <meta name="keywords" content="desarrollador web, Back-End, Java, C#, PHP, proyectos de desarrollo">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>PortFolio</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="container">
-            <nav>
-                <Div class="nav-izquierda">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Sobre mi</a></li>
-                        <li><a href="#">Mis Proyectos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </Div>
-        
-                <div class="nav-derecha">
-                    <!--Poner para elegir el idioma (Español o Ingles)-->
-                    <button>spanish</button>
-                </div>
-            </nav>
-        </div>
-    </div>
 
     <header>
+        <nav aria-label="Main navigation">
+            <a href="#inicio" aria-label="Ir a la sección de inicio">Inicio</a>
+            <a href="#sobre-mi" aria-label="Ir a la sección Sobre mi">Sobre mi</a>
+            <a href="#proyectos" aria-label="Ir a la sección de Mis Proyectos">Mis Proyectos</a>
+            <a href="#contactos" aria-label="Ir a la sección de Contacto">Contacto</a>
+        </nav>    
+        
+        <div class="idiomas">
+            <!--Poner para elegir el idioma (Español o Ingles)-->
+            <button id="spanish">Español</button>
+            <button id="english">English</button>
+        </div>
+        
+            
+    </header>
+    
+    <main>
         <!-- Hacer que al tocar "Inicio" del navbar se deslice a donde esta el inicio en el header y lo mismo con ls demás.-->
-        <div class="inicio">
-            <h2>Diograzia Kevin Nicolás</h2>
+        <section class="inicio">
+            <h1>Diograzia Kevin Nicolás</h1>
             <h3> Desarrollador Back-End</h3>
-        </div>
+        </section>
 
-        <div class="sobre-mi">
+        <section class="sobre-mi">
             <h2>Sobre mi:</h2>
-            <h3>Tengo 20 años, actualmente estoy cursando mi ultimo año de secundaria en una escuela técnica orientada a la computación. 
+            <p>Tengo 20 años, actualmente estoy cursando mi ultimo año de secundaria en una escuela técnica orientada a la computación. 
             <br> <br> 
-            Estoy en busca de poder ingresar al mundo laboral y poder aprender y mejorar en la programación. <h3>
-        </div>
+            Estoy en busca de poder ingresar al mundo laboral y poder aprender y mejorar en la programación. <p>
+        </section>
 
-        <div class="mis-proyectos">
+        <section class="proyectos">
+            <p>Actualmente estoy con pocos proyectos pero en está sección van a estar todos los proyectos que yo haya hecho desde 0.</p>
             <h2>Mis proyectos:</h2>
-            <h3>Actualmente estoy con pocos proyectos pero en está sección van a estar todos los proyectos que yo haya hecho desde 0.</h3>
 
             <div class="proyecto">
-                <img src="#" alt="Foto de como se ve el proyecto">
+                <img src="#" alt="Foto de como se ve el proyecto" loading="lazy">
                 <h2 class="titulo">
                     Nombre del proyecto.
                 </h2>
-                <h3 class="descripcion">
+                <p class="descripcion">
                     Descripción breve del proyecto.
-                </h3>
+                </p>
+                <a href="https://github.com/tuUsuario/proyecto1" target="_blank">Ver en GitHub</a>
             </div>
 
             <div class="proyecto">
-                <img src="#" alt="Foto de como se ve el proyecto">
+                <img src="#" alt="Foto de como se ve el proyecto" loading="lazy">
                 <h2 class="titulo">
                     Nombre del proyecto.
                 </h2>
-                <h3 class="descripcion">
+                <p class="descripcion">
                     Descripción breve del proyecto.
-                </h3>
+                </p>
+                <a href="https://github.com/tuUsuario/proyecto1" target="_blank">Ver en GitHub</a>
             </div>
 
             <div class="proyecto">
-                <img src="#" alt="Foto de como se ve el proyecto">
+                <img src="#" alt="Foto de como se ve el proyecto" loading="lazy">
                 <h2 class="titulo">
                     Nombre del proyecto.
                 </h2>
-                <h3 class="descripcion">
+                <p class="descripcion">
                     Descripción breve del proyecto.
-                </h3>
+                </p>
+                <a href="https://github.com/tuUsuario/proyecto1" target="_blank">Ver en GitHub</a>
             </div>
 
-        </div>
+        </section>
 
-        <div class="conocimientos">
+        <section class="conocimientos">
             <h3>Conocimientos: </h3>
 
-            <h3 class="front-end">Front-end: 
+            <div class="front-end">Front-end: 
                 <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>JavaScript</li>
-                    <li>React</li>    
-                    <li>Tailwind CSS</li>
+                    <li class="html">Html</li>
+                    <li class="css">Css</li>
+                    <li class="javaScript">JavaScript</li>
+                    <li class="react">React</li>    
+                    <li class="tailwind">Tailwind CSS</li>
                 </ul>
-            </h3>
+            </div>
 
-            <h3 class="back-end">Back-end:
+            <div class="back-end">Back-end:
                 <ul>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>Php</li>   
+                    <li class="java">Java</li>
+                    <li class="csharp">C#</li>
+                    <li class="php">Php</li>   
                 </ul> 
-            </h3>
+            </div>
 
-            <h3 class="database">Bases de datos:
+            <div class="database">Bases de datos:
                 <ul>
-                    <li>MySQL</li>
-                    <li>PostgreSQL</li>
-                    <li>MongoDB</li>
+                    <li class="mySql">MySQL</li>
+                    <li class="postgreSql">PostgreSQL</li>
+                    <li class="mongodb">MongoDB</li>
                 </ul>
-            </h3>
-        </div>
+            </div>
+        </section>
 
-        <div class="contactos">
+        <section class="contactos">
             <!--Poner el link de github, mi gmail y que soy de CABA unicamente-->
-        </div>
-
-
-    </header>
+            <form action="mailto:tuCorreo@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <a href="https://github.com/tuUsuario" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:tuCorreo@gmail.com"><i class="fas fa-envelope"></i></a>
+            <p><i class="fas fa-map-marker-alt"></i> CABA, Argentina</p>
+        </section>
+    </main>
     
     <footer> 
         &copy;Todos los derechos reservados by: K 
