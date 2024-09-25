@@ -1,15 +1,4 @@
-document.getElementById('spanish').addEventListener('click', function() {
-    localStorage.setItem('language', 'spanish');
-});
-document.getElementById('english').addEventListener('click', function() {
-    localStorage.setItem('language', 'english');
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const lang = localStorage.getItem('language') || 'spanish';
-    // Cambia el contenido al cargar según el idioma
-});
-
+// Si no esta completo el gmail y el nombre aparece un msj para rellenar
 const emailInput = document.getElementById('email');
 emailInput.addEventListener('input', function() {
   if (!emailInput.validity.valid) {
