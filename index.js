@@ -1,28 +1,20 @@
 // Obtener elementos del DOM
-const spanishOption = document.getElementById('spanish-option');
-const englishOption = document.getElementById('english-option');
-const greeting = document.getElementById('greeting');
-const description = document.getElementById('description');
+const dropdownButton = document.getElementById('dropdown-button');
+const dropdownContent = document.getElementById('dropdown-content');
 
-// Función para cambiar al idioma español
-spanishOption.addEventListener('click', function() {
-    greeting.textContent = 'Hola, bienvenido a mi portafolio';
-    description.textContent = 'Soy Diograzia Kevin Nicolás, un desarrollador Back-End. ¡Explora mis proyectos!';
-    toggleActiveLanguage(spanishOption, englishOption);
+// Función para mostrar/ocultar el menú desplegable
+dropdownButton.addEventListener('click', function() {
+  dropdownContent.classList.toggle('show');
 });
 
-// Función para cambiar al idioma inglés
-englishOption.addEventListener('click', function() {
-    greeting.textContent = 'Hello, welcome to my portfolio';
-    description.textContent = 'I am Diograzia Kevin Nicolás, a Back-End developer. Explore my projects!';
-    toggleActiveLanguage(englishOption, spanishOption);
+// Cerrar el menú si se hace clic fuera de él
+window.addEventListener('click', function(e) {
+  if (!e.target.matches('#dropdown-button')) {
+      if (dropdownContent.classList.contains('show')) {
+          dropdownContent.classList.remove('show');
+      }
+  }
 });
-
-// Función para alternar la clase activa en los botones de idioma
-function toggleActiveLanguage(activeOption, inactiveOption) {
-    activeOption.classList.add('active');
-    inactiveOption.classList.remove('active');
-}
 
 // Si no esta completo el gmail y el nombre aparece un msj para rellenar
 const emailInput = document.getElementById('email');
