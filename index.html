@@ -18,21 +18,23 @@
   </head>
 
   <body>
-      <header>
-        <nav aria-label="Main navigation">
-          <a href="#inicio" aria-label="Ir a la sección de inicio">Inicio</a>
-          <a href="#sobre-mi" aria-label="Ir a la sección Sobre mi">Sobre mi</a>
-          <a href="#proyectos" aria-label="Ir a la sección de Mis Proyectos">Mis Proyectos</a>
-          <a href="#contactos" aria-label="Ir a la sección de Contacto">Contacto</a>
-        </nav>
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="#inicio" aria-label="Ir a la sección de inicio">Inicio</a>
+        <a href="#sobre-mi" aria-label="Ir a la sección Sobre mi">Sobre mi</a>
+        <a href="#proyectos" aria-label="Ir a la sección de Mis Proyectos">Mis Proyectos</a>
+        <a href="#contactos" aria-label="Ir a la sección de Contacto">Contacto</a>
+      </nav>
 
-        <div class="idiomas">
-          <!--Poner para elegir el idioma (Español o Ingles)-->
-          <span id="spanish-option" class="active">Español</span> | <span id="english-option">English</span>
+      <div class="idiomas">
+        <!--Poner para elegir el idioma (Español o Ingles)-->
+        <button id="dropdown-button">Español</button>
+        <div id="dropdown-content" class="dropdown-content">
+          <span id="english-option">English</span>
         </div>
-      </header>
+      </div>
+    </header>
 
-      
     <main>
       <!-- Hacer que al tocar "Inicio" del navbar se deslice a donde esta el inicio en el header y lo mismo con ls demás.-->
       <section class="inicio">
