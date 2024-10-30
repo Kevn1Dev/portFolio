@@ -1,0 +1,56 @@
+.contactos {
+    max-width: 800px;
+    padding: 2rem 1rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.contactos h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contactos form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contactos label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contactos input,
+.contactos textarea,
+.contactos button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contactos button {
+    color: #fff;
+    background-color: #ff7f50;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactos button:hover {
+    background-color: #e66b3a;
+}
+
+/* Redes sociales */
+.social-links a {
+    color: #333;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ff7f50;
+}
