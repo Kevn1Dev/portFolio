@@ -1,123 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>PortFolio</title>
-</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Diograzia Kevin Nicolás, desarrollador Back-End"
+    />
+    <meta name="author" content="Diograzia Kevin Nicolás" />
+    <meta
+      name="keywords"
+      content="desarrollador web, Back-End, Java, C#, PHP, proyectos de desarrollo"
+    />
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <title>PortFolio - Diograzia Kevin Nicolás</title>
+  </head>
 
-<body>
-    <div class="navbar">
-        <div class="container">
-            <nav>
-                <Div class="nav-izquierda">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Sobre mi</a></li>
-                        <li><a href="#">Mis Proyectos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </Div>
-        
-                <div class="nav-derecha">
-                    <!--Poner para elegir el idioma (Español o Ingles)-->
-                    <button>spanish</button>
-                </div>
-            </nav>
-        </div>
-    </div>
-
+  <body>
     <header>
-        <!-- Hacer que al tocar "Inicio" del navbar se deslice a donde esta el inicio en el header y lo mismo con ls demás.-->
-        <div class="inicio">
-            <h2>Diograzia Kevin Nicolás</h2>
-            <h3> Desarrollador Back-End</h3>
-        </div>
-
-        <div class="sobre-mi">
-            <h2>Sobre mi:</h2>
-            <h3>Tengo 20 años, actualmente estoy cursando mi ultimo año de secundaria en una escuela técnica orientada a la computación. 
-            <br> <br> 
-            Estoy en busca de poder ingresar al mundo laboral y poder aprender y mejorar en la programación. <h3>
-        </div>
-
-        <div class="mis-proyectos">
-            <h2>Mis proyectos:</h2>
-            <h3>Actualmente estoy con pocos proyectos pero en está sección van a estar todos los proyectos que yo haya hecho desde 0.</h3>
-
-            <div class="proyecto">
-                <img src="#" alt="Foto de como se ve el proyecto">
-                <h2 class="titulo">
-                    Nombre del proyecto.
-                </h2>
-                <h3 class="descripcion">
-                    Descripción breve del proyecto.
-                </h3>
-            </div>
-
-            <div class="proyecto">
-                <img src="#" alt="Foto de como se ve el proyecto">
-                <h2 class="titulo">
-                    Nombre del proyecto.
-                </h2>
-                <h3 class="descripcion">
-                    Descripción breve del proyecto.
-                </h3>
-            </div>
-
-            <div class="proyecto">
-                <img src="#" alt="Foto de como se ve el proyecto">
-                <h2 class="titulo">
-                    Nombre del proyecto.
-                </h2>
-                <h3 class="descripcion">
-                    Descripción breve del proyecto.
-                </h3>
-            </div>
-
-        </div>
-
-        <div class="conocimientos">
-            <h3>Conocimientos: </h3>
-
-            <h3 class="front-end">Front-end: 
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>JavaScript</li>
-                    <li>React</li>    
-                    <li>Tailwind CSS</li>
-                </ul>
-            </h3>
-
-            <h3 class="back-end">Back-end:
-                <ul>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>Php</li>   
-                </ul> 
-            </h3>
-
-            <h3 class="database">Bases de datos:
-                <ul>
-                    <li>MySQL</li>
-                    <li>PostgreSQL</li>
-                    <li>MongoDB</li>
-                </ul>
-            </h3>
-        </div>
-
-        <div class="contactos">
-            <!--Poner el link de github, mi gmail y que soy de CABA unicamente-->
-        </div>
-
-
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Mis Proyectos</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#contactos">Contacto</a>
+      </nav>
     </header>
-    
-    <footer> 
-        &copy;Todos los derechos reservados by: K 
-    </footer>
-    
-</body>
+
+    <main>
+      <section id="inicio" class="inicio">
+        <h1>Diograzia Kevin Nicolás</h1>
+        <h3>Desarrollador Back-End</h3>
+      </section>
+
+      <section id="sobre-mi" class="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+          Tengo 20 años, actualmente estoy cursando mi último año de secundaria
+          en una escuela técnica orientada a la computación.<br /><br />
+          Estoy en busca de poder ingresar al mundo laboral, aprender y
+          mejorar en programación.
+        </p>
+      </section>
+
+      <section id="proyectos" class="proyectos">
+        <h2>Mis proyectos</h2>
+        <p>
+          Actualmente tengo pocos proyectos, pero en esta sección estarán todos
+          los que realice desde cero y/o en los que participe.
+        </p>
+
+        <!-- Ejemplo de proyecto, replica para cada proyecto adicional -->
+        <div class="proyecto">
+          <img src="ruta-imagen.jpg" alt="Vista previa del proyecto" loading="lazy" />
+          <h3 class="titulo">Nombre del proyecto</h3>
+          <p class="descripcion">Descripción breve del proyecto.</p>
+          <a href="https://github.com/tuUsuario/proyecto1" target="_blank" rel="noopener noreferrer"
+            >Ver en GitHub</a
+          >
+        </div>
+      </section>
+
+      <section id="conocimientos" class="conocimientos">
+        <h2>Conocimientos</h2>
+        <div class="front-end">
+          <h3>Front-end</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="back-end">
+          <h3>Back-end</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+
+        <div class="database">
+          <h3>Bases de datos</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contactos" class="contactos">
+        <h2>Contacto</h2>
+        <form
+          action="mailto:tuCorreo@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div class="social-links">
+          <a href="https://github.com/tuUsuario" target="_blank" rel="noopener noreferrer"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a href="mailto:tuCorreo@gmail.com"><i class="fas fa-envelope"></i> Gmail</a>
+          <p><i class="fas fa-map-marker-alt"></i> CABA, Argentina</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2024 Diograzia Kevin Nicolás - Todos los derechos reservados</footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>
+

@@ -1,0 +1,64 @@
+.proyectos {
+    max-width: 1200px;
+    padding: 2rem 1rem;
+    background-color: #f1f1f1;
+}
+
+.proyectos h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.proyectos p {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.proyecto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s;
+}
+
+.proyecto img {
+    max-width: 100%;
+    border: 4px;
+    margin-bottom: 1rem;
+}
+
+.proyecto h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.proyecto p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.proyecto a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #ff7f50;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.proyecto a:hover {
+    background-color: #e66b3a;
+}

@@ -1,0 +1,38 @@
+.conocimientos {
+    max-width: 1000px;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.conocimientos h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.conocimientos div {
+    display: inline-block;
+    width: 30%; /* Acomoda las columnas de conocimientos */
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.conocimientos h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.conocimientos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.conocimientos li {
+    font-size: 1rem;
+    color: #555;
+}

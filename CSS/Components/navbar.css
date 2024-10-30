@@ -1,0 +1,36 @@
+
+/* Estilos para el header y navbar */
+header {
+    background-color: #333; /* Fondo oscuro */
+    padding: 1rem 0; /* Espaciado arriba y abajo */
+    position: sticky; /* Fija el navbar en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté encima del contenido */
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 2rem; /* Espacio entre los enlaces */
+  }
+  
+  header nav a {
+    color: #f1f1f1; /* Texto claro para contrastar con el fondo */
+    text-decoration: none; /* Elimina subrayado */
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s; /* Suaviza el cambio de color */
+  }
+  
+  /* Cambia el color al pasar el mouse */
+  header nav a:hover {
+    color: #ff7f50; /* Un color llamativo para el hover */
+  }
+  
+  /* Estilos para cuando el navbar está en dispositivos móviles */
+  @media (max-width: 768px) {
+    header nav {
+      gap: 1rem; /* Reduce el espacio entre enlaces */
+    }
+  }
