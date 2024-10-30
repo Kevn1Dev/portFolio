@@ -13,110 +13,88 @@
       content="desarrollador web, Back-End, Java, C#, PHP, proyectos de desarrollo"
     />
     <link rel="stylesheet" href="/CSS/index.css" />
-    <script src="index.js"></script>
-    <title>PortFolio</title>
+    <title>PortFolio - Diograzia Kevin Nicolás</title>
   </head>
 
   <body>
     <header>
-      <nav aria-label="Main navigation">
-        <a href="#inicio" aria-label="Ir a la sección de inicio">Inicio</a>
-        <a href="#sobre-mi" aria-label="Ir a la sección Sobre mi">Sobre mi</a>
-        <a href="#proyectos" aria-label="Ir a la sección de Mis Proyectos">Mis Proyectos</a>
-        <a href="#contactos" aria-label="Ir a la sección de Contacto">Contacto</a>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Mis Proyectos</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#contactos">Contacto</a>
       </nav>
     </header>
 
     <main>
-      <!-- Hacer que al tocar "Inicio" del navbar se deslice a donde esta el inicio en el header y lo mismo con ls demás.-->
-      <section class="inicio">
+      <section id="inicio" class="inicio">
         <h1>Diograzia Kevin Nicolás</h1>
         <h3>Desarrollador Back-End</h3>
       </section>
 
-      <section class="sobre-mi">
-        <h2>Sobre mi:</h2>
+      <section id="sobre-mi" class="sobre-mi">
+        <h2>Sobre mí</h2>
         <p>
-          Tengo 20 años, actualmente estoy cursando mi ultimo año de secundaria
-          en una escuela técnica orientada a la computación. <br />
-          <br />
-          Estoy en busca de poder ingresar al mundo laboral y poder aprender y
-          mejorar en la programación.
+          Tengo 20 años, actualmente estoy cursando mi último año de secundaria
+          en una escuela técnica orientada a la computación.<br /><br />
+          Estoy en busca de poder ingresar al mundo laboral, aprender y
+          mejorar en programación.
         </p>
-
-        <p></p>
       </section>
 
-      <section class="proyectos">
+      <section id="proyectos" class="proyectos">
+        <h2>Mis proyectos</h2>
         <p>
-          Actualmente estoy con pocos proyectos pero en está sección van a estar
-          todos los proyectos que yo haya hecho desde 0.
+          Actualmente tengo pocos proyectos, pero en esta sección estarán todos
+          los que realice desde cero y/o en los que participe.
         </p>
-        <h2>Mis proyectos:</h2>
 
+        <!-- Ejemplo de proyecto, replica para cada proyecto adicional -->
         <div class="proyecto">
-          <img src="#" alt="Foto de como se ve el proyecto" loading="lazy" />
-          <h2 class="titulo">Nombre del proyecto.</h2>
+          <img src="ruta-imagen.jpg" alt="Vista previa del proyecto" loading="lazy" />
+          <h3 class="titulo">Nombre del proyecto</h3>
           <p class="descripcion">Descripción breve del proyecto.</p>
-          <a href="https://github.com/tuUsuario/proyecto1" target="_blank"
-            >Ver en GitHub</a
-          >
-        </div>
-
-        <div class="proyecto">
-          <img src="#" alt="Foto de como se ve el proyecto" loading="lazy" />
-          <h2 class="titulo">Nombre del proyecto.</h2>
-          <p class="descripcion">Descripción breve del proyecto.</p>
-          <a href="https://github.com/tuUsuario/proyecto1" target="_blank"
-            >Ver en GitHub</a
-          >
-        </div>
-
-        <div class="proyecto">
-          <img src="#" alt="Foto de como se ve el proyecto" loading="lazy" />
-          <h2 class="titulo">Nombre del proyecto.</h2>
-          <p class="descripcion">Descripción breve del proyecto.</p>
-          <a href="https://github.com/tuUsuario/proyecto1" target="_blank"
+          <a href="https://github.com/tuUsuario/proyecto1" target="_blank" rel="noopener noreferrer"
             >Ver en GitHub</a
           >
         </div>
       </section>
 
-      <section class="conocimientos">
-        <h3>Conocimientos:</h3>
-
+      <section id="conocimientos" class="conocimientos">
+        <h2>Conocimientos</h2>
         <div class="front-end">
-          Front-end:
+          <h3>Front-end</h3>
           <ul>
-            <li class="html">Html</li>
-            <li class="css">Css</li>
-            <li class="react">React</li>
-            <li class="tailwind">Tailwind CSS</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
           </ul>
         </div>
 
         <div class="back-end">
-          Back-end:
+          <h3>Back-end</h3>
           <ul>
-            <li class="javaScript">JavaScript</li>
-            <li class="java">Java</li>
-            <li class="csharp">C#</li>
-            <li class="php">Php</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>PHP</li>
           </ul>
         </div>
 
         <div class="database">
-          Bases de datos:
+          <h3>Bases de datos</h3>
           <ul>
-            <li class="mySql">MySQL</li>
-            <li class="postgreSql">PostgreSQL</li>
-            <li class="mongodb">MongoDB</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
           </ul>
         </div>
       </section>
 
-      <section class="contactos">
-        <!--Poner el link de github, mi gmail y que soy de CABA unicamente-->
+      <section id="contactos" class="contactos">
+        <h2>Contacto</h2>
         <form
           action="mailto:tuCorreo@gmail.com"
           method="post"
@@ -131,14 +109,19 @@
           <button type="submit">Enviar</button>
         </form>
 
-        <a href="https://github.com/tuUsuario" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="mailto:tuCorreo@gmail.com"><i class="fas fa-envelope"></i></a>
-        <p><i class="fas fa-map-marker-alt"></i> CABA, Argentina</p>
+        <div class="social-links">
+          <a href="https://github.com/tuUsuario" target="_blank" rel="noopener noreferrer"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a href="mailto:tuCorreo@gmail.com"><i class="fas fa-envelope"></i> Gmail</a>
+          <p><i class="fas fa-map-marker-alt"></i> CABA, Argentina</p>
+        </div>
       </section>
     </main>
 
-    <footer>&copy;Todos los derechos reservados by: K</footer>
+    <footer>&copy; 2024 Diograzia Kevin Nicolás - Todos los derechos reservados</footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
+
