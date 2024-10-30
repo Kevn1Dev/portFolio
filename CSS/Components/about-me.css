@@ -1,0 +1,19 @@
+.sobre-mi {
+    max-width: 800px; /* Limita el ancho de texto para mejorar la legibilidad */
+    text-align: left;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-left: 4px solid #ff7f50; /* Añade un borde para un toque visual */
+}
+
+.sobre-mi h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.sobre-mi p {
+    font-size: 1rem;
+    line-height: 1.6; /* Mejora la legibilidad */
+    color: #444;
+}
