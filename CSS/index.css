@@ -1,7 +1,11 @@
-@import url(/CSS/Components/body.css);
+@import url(/CSS/Components/general.css);
 @import url(/CSS/Components/navbar.css);
 @import url(/CSS/Components/proyects.css);
-@import url(/CSS/Components/sections-background.css);
+@import url(/CSS/Components/contact.css);
+@import url(/CSS/Components/start.css);
+@import url(/CSS/Components/about-me.css);
+@import url(/CSS/Components/conocimientos.css);
+@import url(/CSS/Components/footer.css);
 
 
 
